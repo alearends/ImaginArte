@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImaginArte</title>
+    <link rel="stylesheet" href="./build/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="w-screen bg-cover h-auto bg-no-repeat">
+    <!-- navbar ini-->
+    <header class="top-2 z-50">
+        <nav class="bg-opacity-5 border-gray-200 h-36">
+            <div
+                class=" container relative max-w-screen-xl flex flex-row mt-2 px-10 py-2 justify-between items-center lg:gap-44 lg:justify-around lg:mx-auto lg:pr-0 lg:p-2">
+                <div class="w-32">
+                    <a href="./index.html" class="flex flex-col items-center px-4">
+                        <img src="./build/assets/libro.png" alt="ImaginArte"
+                            class="rounded-full border-3 border-gray-600">
+                    </a>
+                    <div class="flex flex-col justify-center">
+                        <h1 class="self-center whitespace-nowrap text-2xl text-indigo-900">
+                            ImaginArte</h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar fin-->
+
+    <!-- hero ini-->
+    <section id="hero" class="relative flex mt-3 lg:mt-2 pb-0">
+        <div
+            class="container max-w-screen-xl mt-5 flex  flex-col-reverse px-10 py-2 justify-center items-center lg:flex lg:flex-row lg:justify-around lg:mx-auto lg:pr-0 lg:p-2">
+            <div class="flex flex-col justify-end items-center text-center w-full h-auto">
+                <h2 class="text-center mt-2 mb-2 mx-0 font-bold text-xl lg:text-3xl  lg:mb-4" style="color: #070146">
+                    Letras cosechan
+                    sueños
+                </h2>
+                <p class="lg:mb-2 text-lg lg:text-2xl font-normal text-white"> Sueña con ser astronauta explorando el
+                    vasto
+                    universo. Es un Manager experto en Gestión de Riesgos y superación de desafíos</p>
+            </div>
+            <div class="flex justify-around">
+                <img src="./build/assets/astronauta2.png" alt="" class="w-4/5">
+            </div>
+        </div>
+    </section>
+    <!-- hero fin-->
+
+    <!-- galeria ini-->
+    <section class="relative flex mt-5 lg:mt-7 pb-0">
+        <div
+            class="container max-w-screen-xl flex flex-col px-10 py-2 justify-between items-center lg:mx-auto lg:pr-0 lg:p-2">
+            <h3 class="text-left mb-3 lg:mb-5 mx-0 font-bold text-xl lg:text-3xl" style="color: #070146">Libros
+                Recomendados</h3>
+            <div id="print" class="flex flex-wrap justify-around w-full h-auto"></div>
+        </div>
+    </section>
+    <!-- galeria fin-->
+
+    <div class="flex flex-col justify-center m-0 p-0 gap-0 ontainer relative max-w-screen-xl w-full my-10 px-10 py-2 items-center lg:justify-around lg:mx-auto lg:pr-0 lg:p-2">
+        <img class="px-0 mx-0" src="./build/assets/cenefa-curva.png" alt="">>
+    </div>
+
+    <!-- incluye ini-->
+    <section
+        class="container relative max-w-screen-xl flex flex-row w-full my-10 px-10 py-2 justify-between items-center lg:justify-around lg:mx-auto lg:pr-0 lg:p-2">
+        <div class="flex flex-col px-5 py-4 md:w-full lg:w-1/2 rounded-2xl border-2 border-double border-white" style="border: 5px orange solid; border-style: double; margin: 5px 2px">
+            <h3 class="text-lg lg:text-2xl font-normal text-white text-left mb-3 mx-2" style="color: orange">Añadir nuevo libro</h3>
+            <input type="text" placeholder="nombre del libro" id="nombre"
+                class="text-lato-400 border border-gray-600 rounded-md text-center mb-3 mx-2" />
+            <input type="text" placeholder="autor" id="autor" class="mb-3 mx-2 border border-gray-600 rounded-md text-center" />
+            <input type="text" placeholder="sintesis" id="sintesis"
+                class="border border-gray-600 rounded-md text-center mb-3 mx-2" />
+            <input type="text" placeholder="profesion" id="profesion"
+                class="border border-gray-600 rounded-md text-center mb-3 mx-2" />
+            <input type="text" placeholder="imagen" id="portada"
+                class="border border-gray-600 rounded-md text-center mb-3 mx-2" />
+            <div class="flex flex-row justify-around w-full">
+                <button onclick="insertar()"
+                    class="w-32 rounded-md my-3 py-2 px-5 border text-white text-center bg-blue-500">Añadir</button>
+                <button onclick="limpiarCampos()" class="w-32 rounded-md my-3 py-2 px-5 border text-white text-center bg-blue-500">Limpiar</button>
+            </div>
+        </div>
+    </section>
+    <!-- incluye fin-->
+
+    <div class="flex flex-col justify-center m-0 p-0 gap-0 ontainer relative max-w-screen-xl w-full my-10 px-10 py-2 items-center lg:justify-around lg:mx-auto lg:pr-0 lg:p-2">
+        <img class="px-0 mx-0" src="./build/assets/cenefa-books.png" alt="">
+        <p class="text-center text-orange-300">@AleArends, 2023</p>
+    </div>
+
+    <!-- footer ini-->
+
+    <!-- footer fin-->
+    <script src="./demo.js"></script>
+</body>
+
+</html>

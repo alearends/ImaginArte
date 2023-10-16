@@ -1,0 +1,6 @@
+para ejecutarlo: 
+
+npm run tailwind
+npm run live
+
+localhost:3000

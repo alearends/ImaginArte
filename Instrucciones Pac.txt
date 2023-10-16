@@ -1,0 +1,31 @@
+PAC 1 – MÓDULO 2
+Duración aproximada: 6 horas.
+
+1. Crea un array de objetos de uno de los siguientes temas:
+a. Videojuegos
+b. Saga de películas
+c. Series de TV
+d. Libros
+e. Trenes
+f. Productos tecnológicos
+Cada objeto tendrá al menos 5 claves valor, incluyendo una imagen.
+Una vez tengamos el array, crea una página HTMl que haga un fetch al servidor. En el servidor diseña una ruta que reciba una petición GET que devuelva el array del tema concreto. Muestra el contenido del array en el HTML.
+
+2. Crea una ruta POST que reciba una petición con un objeto del array con los 5 clave-valor. Añade este objeto al array del tema escogido.
+
+3. Crea una ruta PUT que reciba un objeto del array con 5 clave-valor. Dentro del array, modifica el objeto que tenga el nombre que recibimos en la petición.
+
+4. Crea una ruta DELETE que reciba el nombre de algún objeto. Borra el objeto del array que tenga el nombre que recibimos en la petición.
+
+ Se valorará:
+o Funcionamiento general y control de estructuras (7 puntos)
+o Maquetación profesional (2 puntos)
+o Código optimizado (1 punto)
+
+
+
+
+para ejecutarlo: 
+
+npm run tailwind
+npm run live

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImaginArte</title>
+    <link rel="stylesheet" href="./build/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-gray-600 to-black w-screen bg-cover h-auto bg-no-repeat">
+    <!-- navbar ini-->
+    <header class="top-2 z-50">
+        <nav class="bg-opacity-5 border-gray-200 h-36">
+            <div
+                class="container relative max-w-screen-xl flex flex-row mt-2 px-10 py-2 justify-between items-center lg:gap-44 lg:justify-around lg:mx-auto lg:pr-0 lg:p-2">
+                <div class="flex flex-col md:hidden rounded-lg border-2 border-yellow-400 " onclick="openMenu();">
+                    <img class="z-10 w-10 " src="./build/assets/menu-sharp.svg">
+                </div>
+                <div class="w-32">
+                    <a href="./index.html" class="flex flex-col items-center px-4">
+                        <img src="./build/assets/libro.png" alt="ImaginArte"
+                            class="rounded-full border-3 border-gray-600">
+                    </a>
+                    <div class="flex flex-col justify-center">
+                        <h1 class="self-center whitespace-nowrap text-2xl text-white">
+                            ImaginArte</h1>
+                    </div>
+                </div>
+                <div id="navbar-search"
+                    class="items-center justify-around hidden absolute top-24  md:w-full md:flex md:flex-row md:relative md:top-0 ">
+                    <ul
+                        class="flex flex-col md:px-4 mt-0.5 font-medium border-2 border-yellow-400 rounded-lg  bg-opacity-20 md:w-full md:justify-evenly md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-opacity-5 md:text-2xl">
+                        <li>
+                            <a href="./incluye.html"
+                                class="block py-0.5 pl-3 pr-4 font-bold text-lg md:text-2xl text-white hover:text-yellow-400 rounded md:hover:bg-transparent md:hover:text-yellow-400 transition duration-300 ease-in-out md:p-0">Incluye
+                                +</a>
+                        </li>
+                        <li>
+                            <a href="./edita.html"
+                                class="block py-0.5 pl-3 pr-4 font-bold text-lg md:text-2xl text-white hover:text-yellow-400 rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-yellow-400 transition duration-300 ease-in-out md:p-0">Edita
+                                +</a>
+                        </li>
+                        <li>
+                            <a href="./AboutUs.html"
+                                class="block py-0.5 pl-3 pr-4 font-bold text-lg md:text-2xl text-white hover:text-yellow-400 rounded hover:bg-transparent md:hover:bg-transparent md:hover:text-yellow-400 transition duration-300 ease-in-out md:p-0">Conoce
+                                +</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar fin-->
+
+    <!-- libro BIG ini-->
+    <section class="relative flex mt-5 lg:mt-7 pb-0">
+        <div
+            class="container max-w-screen-xl flex flex-col px-10 py-2 justify-between items-center lg:mx-auto lg:pr-0 lg:p-2">
+            <h3 class="text-left mb-3 lg:mb-5 mx-0 font-bold text-xl lg:text-3xl" style="color: orange">El Libro</h3>
+            <div id="printUno" class="flex flex-wrap justify-around  w-full h-auto"><span
+                    class="text-white text-center">Aqui va el "print"</span></div>
+        </div>
+    </section>
+
+    <footer class="relative flex">
+        <div
+            class="container relative max-w-screen-xl flex flex-row my-5 py-2 justify-around items-center lg:gap-44 lg:justify-between lg:mx-auto lg:pr-0 lg:p-2">
+            <article class="flex flex-col">
+                <img src="./build/assets/libro.png" alt="ImaginArte" class="w-24 rounded-full border-3 border-gray-600">
+                <address class="text-sm text-center leading-1 text-white pt-2">ImaginArte <br> +34 600400129</address>
+            </article>
+            <article class="flex flex-col items-end">
+                <a href="./index.html" class="text-white font-bold py-0 my-0">Imagina<span style="color: orange"> +</span></a>
+                <a href="./incluye.html" class="text-white font-bold pt-2 my-0">Incluye<span style="color: orange"> +</span></a>
+                <a href="./edita.html" class="text-white font-bold pt-2 my-0">Edita<span style="color: orange"> +</span></a>
+                <a href="./AboutUs.html" class="text-white font-bold pt-2 my-0">Conoce<span style="color: orange"> +</span></a>
+            </article>
+        </div>
+    </footer>
+    <!-- footer fin-->
+
+    <!-- <script src="./demo.js"></script> -->
+    <script src="./demo.js"></script>
+</body>
+
+</html>
